@@ -26,6 +26,3 @@ Route::post('/add-contact', [ContactController::class, 'store']);
 Route::get('/edit-contact/{id}', [ContactController::class, 'edit']);
 Route::put('update-contact/{id}', [ContactController::class, 'update']);
 Route::delete('delete-contact/{id}', [ContactController::class, 'destroy']);
-
-// Search Route
-Route::get('/search/{key}',[ContactController::class, 'contactBySearch']);
